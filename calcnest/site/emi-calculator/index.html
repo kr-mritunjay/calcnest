@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EMI Calculator – Calculate Loan EMI Online (Free)</title>
+<meta name="description" content="Free EMI calculator for home, car and personal loans. Enter amount, interest rate and tenure to see your monthly EMI, total interest and total payment instantly.">
+<link rel="canonical" href="https://moneymathtool.com/emi-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MoneyMath">
+<meta property="og:title" content="EMI Calculator – Calculate Loan EMI Online (Free)">
+<meta property="og:description" content="Free EMI calculator for home, car and personal loans. Enter amount, interest rate and tenure to see your monthly EMI, total interest and total payment instantly.">
+<meta property="og:url" content="https://moneymathtool.com/emi-calculator/">
+<meta name="theme-color" content="#0e1a30">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/style.css">
+<!-- ADSENSE: after approval, paste your AdSense <script> tag here, and add class="ads" to the <html> tag. -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is my EMI the same every month?", "acceptedAnswer": {"@type": "Answer", "text": "On a fixed-rate loan, yes. On a floating-rate loan the lender can change the rate, which changes either your EMI or your tenure."}}, {"@type": "Question", "name": "Does the calculator include processing fees?", "acceptedAnswer": {"@type": "Answer", "text": "No. It only covers principal and interest. Processing fees, GST on fees and insurance are charged separately by the lender."}}, {"@type": "Question", "name": "What is better, a shorter or a longer tenure?", "acceptedAnswer": {"@type": "Answer", "text": "A shorter tenure means a higher EMI but much less interest. A longer tenure keeps the EMI small but costs more overall. Pick the shortest tenure whose EMI you can pay comfortably."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://moneymathtool.com/"}, {"@type": "ListItem", "position": 2, "name": "Calculators", "item": "https://moneymathtool.com/calculators/"}, {"@type": "ListItem", "position": 3, "name": "EMI Calculator", "item": "https://moneymathtool.com/emi-calculator/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "EMI Calculator", "url": "https://moneymathtool.com/emi-calculator/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}}</script>
+</head>
+<body>
+<header class="site-header">
+<div class="wrap">
+<a class="logo" href="/"><span class="logo-mark" aria-hidden="true"><i></i><i></i></span>MoneyMath</a>
+<nav class="nav" aria-label="Main">
+<a href="/calculators/" aria-current="page">Calculators</a>
+<a href="/converters/">Converters</a>
+</nav>
+</div>
+</header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/calculators/">Calculators</a> / EMI Calculator</nav>
+<div class="tool-layout">
+<article>
+<header class="tool-head">
+<span class="badge">Calculator</span>
+<h1>EMI Calculator</h1>
+<p class="lead">Work out your monthly loan payment, total interest and total cost in seconds. Works for home, car, personal and education loans.</p>
+</header>
+<div class="ad ad-top" aria-label="Advertisement"><!-- ad unit: top --></div>
+<form class="panel" data-calc="emi" novalidate><div class="calc-grid"><div><div class="field" data-field="amount" data-words><div class="field-head"><label for="f-amount">Loan amount</label><div class="input"><span class="pre">₹</span><input id="f-amount" name="amount" type="number" step="any" inputmode="decimal" value="1000000"></div></div><input class="slider" type="range" min="50000" max="20000000" step="10000" value="1000000" aria-label="Loan amount slider"><p class="hint" aria-live="polite"></p></div><div class="field" data-field="rate"><div class="field-head"><label for="f-rate">Interest rate (per year)</label><div class="input"><input id="f-rate" name="rate" type="number" step="any" inputmode="decimal" value="9"><span class="suf">%</span></div></div><input class="slider" type="range" min="1" max="30" step="0.1" value="9" aria-label="Interest rate (per year) slider"></div><div class="field" data-field="years"><div class="field-head"><label for="f-years">Loan tenure</label><div class="input"><input id="f-years" name="years" type="number" step="any" inputmode="decimal" value="5"><span class="suf">yrs</span></div></div><input class="slider" type="range" min="1" max="30" step="0.5" value="5" aria-label="Loan tenure slider"></div></div><div class="out" aria-live="polite"></div></div></form>
+<div class="ad ad-mid" aria-label="Advertisement"><!-- ad unit: mid --></div>
+<section class="prose">
+
+<h2>How the EMI calculator works</h2>
+<p>An EMI (equated monthly instalment) is the fixed amount you pay your lender every month until the loan is cleared. Each payment covers some interest and some of the principal. Early on most of it is interest; towards the end most of it is principal.</p>
+<p>The calculator uses the standard reducing-balance formula:</p>
+<p class="formula-box">EMI = P × r × (1 + r)ⁿ ÷ [(1 + r)ⁿ − 1]</p>
+<ul>
+<li><strong>P</strong> is the loan amount (principal).</li>
+<li><strong>r</strong> is the monthly interest rate: the yearly rate divided by 12, then by 100.</li>
+<li><strong>n</strong> is the number of monthly instalments.</li>
+</ul>
+<h2>Example</h2>
+<p>On a loan of ₹10,00,000 at 9% a year for 5 years, r is 0.0075 and n is 60. The EMI works out to about <strong>₹20,758</strong>. Over 60 months you would pay ₹12,45,501 in total, of which ₹2,45,501 is interest.</p>
+<h2>Ways to lower your EMI</h2>
+<ul>
+<li>Choose a longer tenure. The EMI drops, but you pay more interest overall.</li>
+<li>Make a larger down payment so you borrow less.</li>
+<li>Compare rates from several lenders before you sign.</li>
+<li>Prepay part of the loan when you have spare cash. This shortens the tenure or reduces the EMI.</li>
+</ul>
+<p class="notice">This calculator gives an estimate for a fixed-rate loan. Processing fees, insurance and rate changes on floating-rate loans are not included, so check the final figures with your lender.</p>
+
+</section>
+<section class="prose faq" style="margin-top:20px" aria-labelledby="faq-h">
+<h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Is my EMI the same every month?</summary><p>On a fixed-rate loan, yes. On a floating-rate loan the lender can change the rate, which changes either your EMI or your tenure.</p></details><details><summary>Does the calculator include processing fees?</summary><p>No. It only covers principal and interest. Processing fees, GST on fees and insurance are charged separately by the lender.</p></details><details><summary>What is better, a shorter or a longer tenure?</summary><p>A shorter tenure means a higher EMI but much less interest. A longer tenure keeps the EMI small but costs more overall. Pick the shortest tenure whose EMI you can pay comfortably.</p></details>
+</section>
+</article>
+<aside class="side">
+<div class="side-box"><h2>More tools</h2><ul><li><a href="/sip-calculator/"><span class="glyph" aria-hidden="true">↗</span><span>SIP Calculator</span></a></li><li><a href="/gst-calculator/"><span class="glyph small" aria-hidden="true">GST</span><span>GST Calculator</span></a></li><li><a href="/percentage-calculator/"><span class="glyph" aria-hidden="true">%</span><span>Percentage Calculator</span></a></li></ul></div>
+<div class="ad ad-side" aria-label="Advertisement"><!-- ad unit: side --></div>
+</aside>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-grid">
+<div><h2>MoneyMath</h2><p>Free online calculators and unit converters. Everything runs in your browser, so what you type stays on your device.</p></div>
+<div><h2>US finance</h2><ul><li><a href="/mortgage-calculator/">Mortgage Calculator</a></li><li><a href="/auto-loan-calculator/">Auto Loan Calculator</a></li><li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li><li><a href="/retirement-calculator/">Retirement Calculator</a></li><li><a href="/credit-card-payoff-calculator/">Credit Card Payoff Calculator</a></li><li><a href="/take-home-pay-calculator/">Take-Home Pay Calculator</a></li></ul></div>
+<div><h2>India finance</h2><ul><li><a href="/emi-calculator/">EMI Calculator</a></li><li><a href="/sip-calculator/">SIP Calculator</a></li><li><a href="/gst-calculator/">GST Calculator</a></li></ul></div>
+<div><h2>Everyday tools</h2><ul><li><a href="/percentage-calculator/">Percentage Calculator</a></li><li><a href="/age-calculator/">Age Calculator</a></li><li><a href="/km-to-miles/">Kilometres to Miles</a></li><li><a href="/kg-to-lbs/">Kilograms to Pounds</a></li><li><a href="/cm-to-inches/">Centimetres to Inches</a></li><li><a href="/celsius-to-fahrenheit/">Celsius to Fahrenheit</a></li></ul></div>
+<div><h2>Company</h2><ul>
+<li><a href="/about/">About</a></li>
+<li><a href="/contact/">Contact</a></li>
+<li><a href="/privacy-policy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Use</a></li>
+</ul></div>
+</div>
+<p class="footer-note">© 2026 MoneyMath. Results are estimates for general guidance and are not financial, tax or legal advice.</p>
+</div>
+</footer>
+<script src="/assets/units.js"></script>
+<script src="/assets/app.js" defer></script>
+</body>
+</html>

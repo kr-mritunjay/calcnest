@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auto Loan Calculator – Monthly Car Payment with Sales Tax</title>
+<meta name="description" content="Free auto loan calculator. Enter the car price, down payment, trade-in, sales tax, rate and term to see your monthly car payment and total interest.">
+<link rel="canonical" href="https://moneymathtool.com/auto-loan-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MoneyMath">
+<meta property="og:title" content="Auto Loan Calculator – Monthly Car Payment with Sales Tax">
+<meta property="og:description" content="Free auto loan calculator. Enter the car price, down payment, trade-in, sales tax, rate and term to see your monthly car payment and total interest.">
+<meta property="og:url" content="https://moneymathtool.com/auto-loan-calculator/">
+<meta name="theme-color" content="#0e1a30">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/style.css">
+<!-- ADSENSE: after approval, paste your AdSense <script> tag here, and add class="ads" to the <html> tag. -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How is a car loan payment calculated?", "acceptedAnswer": {"@type": "Answer", "text": "From the amount you finance, the interest rate and the number of months, using the standard installment-loan formula shown above. Sales tax and fees can be rolled into the loan, which raises the amount financed."}}, {"@type": "Question", "name": "Should I choose a 60-month or a 72-month car loan?", "acceptedAnswer": {"@type": "Answer", "text": "A 72-month loan has a lower payment but costs more in interest and leaves you owing for longer. If you can afford the 60-month payment comfortably, it usually costs less overall."}}, {"@type": "Question", "name": "Does a bigger down payment help?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It reduces the amount you borrow, which lowers both the monthly payment and the total interest, and it helps you avoid owing more than the car is worth."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://moneymathtool.com/"}, {"@type": "ListItem", "position": 2, "name": "Calculators", "item": "https://moneymathtool.com/calculators/"}, {"@type": "ListItem", "position": 3, "name": "Auto Loan Calculator", "item": "https://moneymathtool.com/auto-loan-calculator/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Auto Loan Calculator", "url": "https://moneymathtool.com/auto-loan-calculator/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+</head>
+<body>
+<header class="site-header">
+<div class="wrap">
+<a class="logo" href="/"><span class="logo-mark" aria-hidden="true"><i></i><i></i></span>MoneyMath</a>
+<nav class="nav" aria-label="Main">
+<a href="/calculators/" aria-current="page">Calculators</a>
+<a href="/converters/">Converters</a>
+</nav>
+</div>
+</header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/calculators/">Calculators</a> / Auto Loan Calculator</nav>
+<div class="tool-layout">
+<article>
+<header class="tool-head">
+<span class="badge">Calculator</span>
+<h1>Auto Loan Calculator</h1>
+<p class="lead">Work out what a car will really cost each month and in total, including sales tax, your down payment and any trade-in.</p>
+</header>
+<div class="ad ad-top" aria-label="Advertisement"><!-- ad unit: top --></div>
+<form class="panel" data-calc="auto" novalidate><div class="calc-grid"><div><div class="field" data-field="price"><div class="field-head"><label for="f-price">Vehicle price</label><div class="input"><span class="pre">$</span><input id="f-price" name="price" type="number" step="any" inputmode="decimal" value="35000"></div></div><input class="slider" type="range" min="5000" max="150000" step="500" value="35000" aria-label="Vehicle price slider"></div><div class="field" data-field="down"><div class="field-head"><label for="f-down">Down payment</label><div class="input"><span class="pre">$</span><input id="f-down" name="down" type="number" step="any" inputmode="decimal" value="3000"></div></div></div><div class="field" data-field="trade"><div class="field-head"><label for="f-trade">Trade-in value</label><div class="input"><span class="pre">$</span><input id="f-trade" name="trade" type="number" step="any" inputmode="decimal" value="0"></div></div></div><div class="field" data-field="tax"><div class="field-head"><label for="f-tax">Sales tax</label><div class="input"><input id="f-tax" name="tax" type="number" step="any" inputmode="decimal" value="6"><span class="suf">%</span></div></div></div><div class="field" data-field="rate"><div class="field-head"><label for="f-rate">Interest rate (APR)</label><div class="input"><input id="f-rate" name="rate" type="number" step="any" inputmode="decimal" value="7"><span class="suf">%</span></div></div><input class="slider" type="range" min="0" max="20" step="0.1" value="7" aria-label="Interest rate (APR) slider"></div><div class="field"><div class="field-head"><span class="lbl">Loan term</span></div><div class="seg" data-field="months" role="group" aria-label="Loan term"><button type="button" data-v="36" aria-pressed="false">36 mo</button><button type="button" data-v="48" aria-pressed="false">48 mo</button><button type="button" data-v="60" aria-pressed="true">60 mo</button><button type="button" data-v="72" aria-pressed="false">72 mo</button><button type="button" data-v="84" aria-pressed="false">84 mo</button></div></div></div><div class="out" aria-live="polite"></div></div></form>
+<div class="ad ad-mid" aria-label="Advertisement"><!-- ad unit: mid --></div>
+<section class="prose">
+
+<h2>How the auto loan calculator works</h2>
+<p>A car loan works like any fixed-rate installment loan. You borrow an amount, pay a fixed monthly payment, and each payment covers that month's interest plus a slice of the balance. The calculator first works out how much you need to borrow, then applies the standard payment formula:</p>
+<p class="formula-box">Amount financed = price − trade-in + sales tax − down payment<br>Payment = L × r × (1 + r)ⁿ ÷ [(1 + r)ⁿ − 1]</p>
+<p>Here L is the amount financed, r is the monthly rate (the APR divided by 12) and n is the number of months.</p>
+<h2>Example</h2>
+<p>A $35,000 car with $3,000 down and 6% sales tax ($2,100) means you finance $34,100. At 7% APR over 60 months the payment is about <strong>$675.22</strong>, and you pay roughly $6,413 in interest.</p>
+<h2>Choosing the loan term</h2>
+<p>A longer term lowers the monthly payment but raises the total interest. It also keeps you owing money for longer, and cars lose value quickly, so on a long loan you can owe more than the car is worth for a while. Compare 48, 60 and 72 months above to see the trade-off.</p>
+<p>A common rule of thumb is the 20/4/10 guideline: put at least 20% down, finance for no more than four years, and keep total car costs, including insurance and fuel, under about 10% of your gross income. It is a starting point rather than a rule.</p>
+<h2>What is not included</h2>
+<p>Sales tax rules differ by state. This calculator applies the tax rate to the price minus your trade-in, which some states do and some do not. Title, registration and dealer fees, add-ons such as extended warranties, and insurance are not included. Ask the dealer for an out-the-door price and use that figure to get a closer result.</p>
+<p class="notice">Estimates only. Your lender's actual terms depend on your credit, the vehicle and the loan offer.</p>
+
+</section>
+<section class="prose faq" style="margin-top:20px" aria-labelledby="faq-h">
+<h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How is a car loan payment calculated?</summary><p>From the amount you finance, the interest rate and the number of months, using the standard installment-loan formula shown above. Sales tax and fees can be rolled into the loan, which raises the amount financed.</p></details><details><summary>Should I choose a 60-month or a 72-month car loan?</summary><p>A 72-month loan has a lower payment but costs more in interest and leaves you owing for longer. If you can afford the 60-month payment comfortably, it usually costs less overall.</p></details><details><summary>Does a bigger down payment help?</summary><p>Yes. It reduces the amount you borrow, which lowers both the monthly payment and the total interest, and it helps you avoid owing more than the car is worth.</p></details>
+</section>
+</article>
+<aside class="side">
+<div class="side-box"><h2>More tools</h2><ul><li><a href="/mortgage-calculator/"><span class="glyph small" aria-hidden="true">home</span><span>Mortgage Calculator</span></a></li><li><a href="/credit-card-payoff-calculator/"><span class="glyph small" aria-hidden="true">card</span><span>Credit Card Payoff Calculator</span></a></li><li><a href="/take-home-pay-calculator/"><span class="glyph small" aria-hidden="true">net</span><span>Take-Home Pay Calculator</span></a></li></ul></div>
+<div class="ad ad-side" aria-label="Advertisement"><!-- ad unit: side --></div>
+</aside>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-grid">
+<div><h2>MoneyMath</h2><p>Free online calculators and unit converters. Everything runs in your browser, so what you type stays on your device.</p></div>
+<div><h2>US finance</h2><ul><li><a href="/mortgage-calculator/">Mortgage Calculator</a></li><li><a href="/auto-loan-calculator/">Auto Loan Calculator</a></li><li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li><li><a href="/retirement-calculator/">Retirement Calculator</a></li><li><a href="/credit-card-payoff-calculator/">Credit Card Payoff Calculator</a></li><li><a href="/take-home-pay-calculator/">Take-Home Pay Calculator</a></li></ul></div>
+<div><h2>India finance</h2><ul><li><a href="/emi-calculator/">EMI Calculator</a></li><li><a href="/sip-calculator/">SIP Calculator</a></li><li><a href="/gst-calculator/">GST Calculator</a></li></ul></div>
+<div><h2>Everyday tools</h2><ul><li><a href="/percentage-calculator/">Percentage Calculator</a></li><li><a href="/age-calculator/">Age Calculator</a></li><li><a href="/km-to-miles/">Kilometres to Miles</a></li><li><a href="/kg-to-lbs/">Kilograms to Pounds</a></li><li><a href="/cm-to-inches/">Centimetres to Inches</a></li><li><a href="/celsius-to-fahrenheit/">Celsius to Fahrenheit</a></li></ul></div>
+<div><h2>Company</h2><ul>
+<li><a href="/about/">About</a></li>
+<li><a href="/contact/">Contact</a></li>
+<li><a href="/privacy-policy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Use</a></li>
+</ul></div>
+</div>
+<p class="footer-note">© 2026 MoneyMath. Results are estimates for general guidance and are not financial, tax or legal advice.</p>
+</div>
+</footer>
+<script src="/assets/units.js"></script>
+<script src="/assets/app.js" defer></script>
+</body>
+</html>

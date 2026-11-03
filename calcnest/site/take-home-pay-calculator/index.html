@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Take-Home Pay Calculator – Salary After Federal Tax (2026)</title>
+<meta name="description" content="Free take-home pay calculator using 2026 federal tax brackets. See your salary after federal income tax, Social Security, Medicare, state tax and 401(k).">
+<link rel="canonical" href="https://moneymathtool.com/take-home-pay-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MoneyMath">
+<meta property="og:title" content="Take-Home Pay Calculator – Salary After Federal Tax (2026)">
+<meta property="og:description" content="Free take-home pay calculator using 2026 federal tax brackets. See your salary after federal income tax, Social Security, Medicare, state tax and 401(k).">
+<meta property="og:url" content="https://moneymathtool.com/take-home-pay-calculator/">
+<meta name="theme-color" content="#0e1a30">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/style.css">
+<!-- ADSENSE: after approval, paste your AdSense <script> tag here, and add class="ads" to the <html> tag. -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the difference between gross and take-home pay?", "acceptedAnswer": {"@type": "Answer", "text": "Gross pay is your salary before anything is taken out. Take-home pay, also called net pay, is what remains after taxes and deductions such as a 401(k)."}}, {"@type": "Question", "name": "Does a 401(k) contribution lower my taxes?", "acceptedAnswer": {"@type": "Answer", "text": "A traditional 401(k) lowers the income used for federal and most state income tax, so your take-home pay falls by less than the amount you contribute. It does not lower Social Security or Medicare tax."}}, {"@type": "Question", "name": "What state tax rate should I enter?", "acceptedAnswer": {"@type": "Answer", "text": "Enter 0 if your state does not tax wages. Otherwise use your state's rate for your income level, which your state revenue department publishes. The calculator treats it as a flat percentage."}}, {"@type": "Question", "name": "Why is my real paycheck different?", "acceptedAnswer": {"@type": "Answer", "text": "Employers also withhold for health insurance, other benefits and local taxes, and withholding depends on your W-4. This calculator shows the annual tax picture, not your exact payroll."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://moneymathtool.com/"}, {"@type": "ListItem", "position": 2, "name": "Calculators", "item": "https://moneymathtool.com/calculators/"}, {"@type": "ListItem", "position": 3, "name": "Take-Home Pay Calculator", "item": "https://moneymathtool.com/take-home-pay-calculator/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Take-Home Pay Calculator", "url": "https://moneymathtool.com/take-home-pay-calculator/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+</head>
+<body>
+<header class="site-header">
+<div class="wrap">
+<a class="logo" href="/"><span class="logo-mark" aria-hidden="true"><i></i><i></i></span>MoneyMath</a>
+<nav class="nav" aria-label="Main">
+<a href="/calculators/" aria-current="page">Calculators</a>
+<a href="/converters/">Converters</a>
+</nav>
+</div>
+</header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/calculators/">Calculators</a> / Take-Home Pay Calculator</nav>
+<div class="tool-layout">
+<article>
+<header class="tool-head">
+<span class="badge">Calculator</span>
+<h1>Take-Home Pay Calculator</h1>
+<p class="lead">Turn a salary into what lands in your account. Uses 2026 federal tax brackets, payroll taxes and an estimated state rate.</p>
+</header>
+<div class="ad ad-top" aria-label="Advertisement"><!-- ad unit: top --></div>
+<form class="panel" data-calc="takehome" novalidate><div class="calc-grid"><div><div class="field" data-field="salary"><div class="field-head"><label for="f-salary">Annual salary (before tax)</label><div class="input"><span class="pre">$</span><input id="f-salary" name="salary" type="number" step="any" inputmode="decimal" value="75000"></div></div><input class="slider" type="range" min="20000" max="400000" step="1000" value="75000" aria-label="Annual salary (before tax) slider"></div><div class="field"><div class="field-head"><span class="lbl">Filing status</span></div><div class="seg" data-field="status" role="group" aria-label="Filing status"><button type="button" data-v="single" aria-pressed="true">Single</button><button type="button" data-v="married" aria-pressed="false">Married filing jointly</button></div></div><div class="field" data-field="k401"><div class="field-head"><label for="f-k401">Pre-tax 401(k) (per year)</label><div class="input"><span class="pre">$</span><input id="f-k401" name="k401" type="number" step="any" inputmode="decimal" value="0"></div></div></div><div class="field" data-field="state"><div class="field-head"><label for="f-state">State income tax (estimated rate)</label><div class="input"><input id="f-state" name="state" type="number" step="any" inputmode="decimal" value="5"><span class="suf">%</span></div></div></div></div><div class="out" aria-live="polite"></div></div></form>
+<div class="ad ad-mid" aria-label="Advertisement"><!-- ad unit: mid --></div>
+<section class="prose">
+
+<h2>How take-home pay is calculated</h2>
+<p>Your paycheck is your salary minus several deductions. This calculator applies them in the order that payroll does:</p>
+<ul>
+<li><strong>Pre-tax 401(k):</strong> money you put into a traditional 401(k) reduces the income that federal and most state income tax is based on. It does not reduce Social Security and Medicare tax.</li>
+<li><strong>Federal income tax:</strong> the standard deduction ($16,100 for single filers and $32,200 for married couples filing jointly in 2026) is subtracted first. The rest is taxed in layers, called brackets.</li>
+<li><strong>Social Security:</strong> 6.2% of wages up to $184,500 in 2026.</li>
+<li><strong>Medicare:</strong> 1.45% of all wages, plus an extra 0.9% on wages above $200,000 for single filers and $250,000 for married couples filing jointly.</li>
+<li><strong>State income tax:</strong> you enter an estimated rate. Some states, such as Texas and Florida, do not tax wages.</li>
+</ul>
+<h2>2026 federal tax brackets</h2>
+<p>Each rate applies only to the slice of taxable income inside its range, not to all your income. Single filers:</p>
+<div class="table-scroll"><table class="ref"><thead><tr><th>Rate</th><th>Taxable income</th></tr></thead><tbody><tr><td>10%</td><td>$0 to $12,400</td></tr><tr><td>12%</td><td>$12,400 to $50,400</td></tr><tr><td>22%</td><td>$50,400 to $105,700</td></tr><tr><td>24%</td><td>$105,700 to $201,775</td></tr><tr><td>32%</td><td>$201,775 to $256,225</td></tr><tr><td>35%</td><td>$256,225 to $640,600</td></tr><tr><td>37%</td><td>Over $640,600</td></tr></tbody></table></div>
+<p>Married filing jointly:</p>
+<div class="table-scroll"><table class="ref"><thead><tr><th>Rate</th><th>Taxable income</th></tr></thead><tbody><tr><td>10%</td><td>$0 to $24,800</td></tr><tr><td>12%</td><td>$24,800 to $100,800</td></tr><tr><td>22%</td><td>$100,800 to $211,400</td></tr><tr><td>24%</td><td>$211,400 to $403,550</td></tr><tr><td>32%</td><td>$403,550 to $512,450</td></tr><tr><td>35%</td><td>$512,450 to $768,700</td></tr><tr><td>37%</td><td>Over $768,700</td></tr></tbody></table></div>
+<h2>Marginal rate and effective rate</h2>
+<p>Your marginal rate is the rate on your last dollar of taxable income, which is the bracket you fall in. Your effective rate is your total federal tax divided by your salary, and it is always lower. Moving into a higher bracket only taxes the extra income at the higher rate, so a raise never lowers your take-home pay.</p>
+<h2>Example</h2>
+<p>A single filer earning $75,000 has taxable income of $58,900 after the standard deduction. Federal income tax is about $7,670, Social Security $4,650 and Medicare $1,088. With a 5% state tax estimate of $3,750, take-home pay is about <strong>$57,842</strong> a year, or $4,820 a month.</p>
+<h2>What is not included</h2>
+<p>This is a simplified estimate. It does not include other income, itemized deductions, tax credits such as the child tax credit, local or city taxes, health insurance and other payroll deductions, or head of household filing. Your actual paycheck depends on your W-4 and your employer's payroll.</p>
+<p class="notice">Figures are for tax year 2026. Tax rules change, so check irs.gov or a tax professional for your own situation.</p>
+
+</section>
+<section class="prose faq" style="margin-top:20px" aria-labelledby="faq-h">
+<h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What is the difference between gross and take-home pay?</summary><p>Gross pay is your salary before anything is taken out. Take-home pay, also called net pay, is what remains after taxes and deductions such as a 401(k).</p></details><details><summary>Does a 401(k) contribution lower my taxes?</summary><p>A traditional 401(k) lowers the income used for federal and most state income tax, so your take-home pay falls by less than the amount you contribute. It does not lower Social Security or Medicare tax.</p></details><details><summary>What state tax rate should I enter?</summary><p>Enter 0 if your state does not tax wages. Otherwise use your state&#x27;s rate for your income level, which your state revenue department publishes. The calculator treats it as a flat percentage.</p></details><details><summary>Why is my real paycheck different?</summary><p>Employers also withhold for health insurance, other benefits and local taxes, and withholding depends on your W-4. This calculator shows the annual tax picture, not your exact payroll.</p></details>
+</section>
+</article>
+<aside class="side">
+<div class="side-box"><h2>More tools</h2><ul><li><a href="/retirement-calculator/"><span class="glyph small" aria-hidden="true">401k</span><span>Retirement Calculator</span></a></li><li><a href="/mortgage-calculator/"><span class="glyph small" aria-hidden="true">home</span><span>Mortgage Calculator</span></a></li><li><a href="/auto-loan-calculator/"><span class="glyph small" aria-hidden="true">auto</span><span>Auto Loan Calculator</span></a></li></ul></div>
+<div class="ad ad-side" aria-label="Advertisement"><!-- ad unit: side --></div>
+</aside>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-grid">
+<div><h2>MoneyMath</h2><p>Free online calculators and unit converters. Everything runs in your browser, so what you type stays on your device.</p></div>
+<div><h2>US finance</h2><ul><li><a href="/mortgage-calculator/">Mortgage Calculator</a></li><li><a href="/auto-loan-calculator/">Auto Loan Calculator</a></li><li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li><li><a href="/retirement-calculator/">Retirement Calculator</a></li><li><a href="/credit-card-payoff-calculator/">Credit Card Payoff Calculator</a></li><li><a href="/take-home-pay-calculator/">Take-Home Pay Calculator</a></li></ul></div>
+<div><h2>India finance</h2><ul><li><a href="/emi-calculator/">EMI Calculator</a></li><li><a href="/sip-calculator/">SIP Calculator</a></li><li><a href="/gst-calculator/">GST Calculator</a></li></ul></div>
+<div><h2>Everyday tools</h2><ul><li><a href="/percentage-calculator/">Percentage Calculator</a></li><li><a href="/age-calculator/">Age Calculator</a></li><li><a href="/km-to-miles/">Kilometres to Miles</a></li><li><a href="/kg-to-lbs/">Kilograms to Pounds</a></li><li><a href="/cm-to-inches/">Centimetres to Inches</a></li><li><a href="/celsius-to-fahrenheit/">Celsius to Fahrenheit</a></li></ul></div>
+<div><h2>Company</h2><ul>
+<li><a href="/about/">About</a></li>
+<li><a href="/contact/">Contact</a></li>
+<li><a href="/privacy-policy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Use</a></li>
+</ul></div>
+</div>
+<p class="footer-note">© 2026 MoneyMath. Results are estimates for general guidance and are not financial, tax or legal advice.</p>
+</div>
+</footer>
+<script src="/assets/units.js"></script>
+<script src="/assets/app.js" defer></script>
+</body>
+</html>

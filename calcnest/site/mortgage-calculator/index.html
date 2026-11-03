@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mortgage Calculator – Monthly Payment with Taxes, Insurance &amp; PMI</title>
+<meta name="description" content="Free mortgage calculator. Enter home price, down payment, rate and term to see your monthly payment including property tax, insurance and PMI, plus the effect of extra payments.">
+<link rel="canonical" href="https://moneymathtool.com/mortgage-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MoneyMath">
+<meta property="og:title" content="Mortgage Calculator – Monthly Payment with Taxes, Insurance &amp; PMI">
+<meta property="og:description" content="Free mortgage calculator. Enter home price, down payment, rate and term to see your monthly payment including property tax, insurance and PMI, plus the effect of extra payments.">
+<meta property="og:url" content="https://moneymathtool.com/mortgage-calculator/">
+<meta name="theme-color" content="#0e1a30">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/style.css">
+<!-- ADSENSE: after approval, paste your AdSense <script> tag here, and add class="ads" to the <html> tag. -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is included in a monthly mortgage payment?", "acceptedAnswer": {"@type": "Answer", "text": "Principal and interest on the loan, plus property tax and homeowners insurance. Mortgage insurance (PMI) and HOA dues are added when they apply. This calculator shows each part separately."}}, {"@type": "Question", "name": "How much should I put down on a house?", "acceptedAnswer": {"@type": "Answer", "text": "Putting down 20% avoids PMI on most conventional loans, but many buyers put down less. A smaller down payment means a larger loan and a higher monthly cost, so weigh it against keeping cash for repairs and emergencies."}}, {"@type": "Question", "name": "Is a 15-year or a 30-year mortgage better?", "acceptedAnswer": {"@type": "Answer", "text": "A 15-year loan has a higher monthly payment but usually a lower rate and far less total interest. A 30-year loan has a lower payment and more flexibility. Choose the shortest term whose payment you can pay comfortably."}}, {"@type": "Question", "name": "Do extra mortgage payments really save money?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Extra money reduces the balance that interest is charged on, which shortens the loan and cuts total interest. The earlier in the loan you make extra payments, the more they save."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://moneymathtool.com/"}, {"@type": "ListItem", "position": 2, "name": "Calculators", "item": "https://moneymathtool.com/calculators/"}, {"@type": "ListItem", "position": 3, "name": "Mortgage Calculator", "item": "https://moneymathtool.com/mortgage-calculator/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Mortgage Calculator", "url": "https://moneymathtool.com/mortgage-calculator/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+</head>
+<body>
+<header class="site-header">
+<div class="wrap">
+<a class="logo" href="/"><span class="logo-mark" aria-hidden="true"><i></i><i></i></span>MoneyMath</a>
+<nav class="nav" aria-label="Main">
+<a href="/calculators/" aria-current="page">Calculators</a>
+<a href="/converters/">Converters</a>
+</nav>
+</div>
+</header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/calculators/">Calculators</a> / Mortgage Calculator</nav>
+<div class="tool-layout">
+<article>
+<header class="tool-head">
+<span class="badge">Calculator</span>
+<h1>Mortgage Calculator</h1>
+<p class="lead">See your full monthly payment, not just principal and interest. Add property tax, insurance, PMI and HOA dues, then test how extra payments shorten the loan.</p>
+</header>
+<div class="ad ad-top" aria-label="Advertisement"><!-- ad unit: top --></div>
+<form class="panel" data-calc="mortgage" novalidate><div class="calc-grid"><div><div class="field" data-field="price"><div class="field-head"><label for="f-price">Home price</label><div class="input"><span class="pre">$</span><input id="f-price" name="price" type="number" step="any" inputmode="decimal" value="400000"></div></div><input class="slider" type="range" min="50000" max="2000000" step="5000" value="400000" aria-label="Home price slider"></div><div class="field" data-field="down" data-of="price"><div class="field-head"><label for="f-down">Down payment</label><div class="input"><input id="f-down" name="down" type="number" step="any" inputmode="decimal" value="20"><span class="suf">%</span></div></div><input class="slider" type="range" min="0" max="60" step="1" value="20" aria-label="Down payment slider"><p class="hint" aria-live="polite"></p><div class="chips"><button type="button" class="chip" data-v="5" aria-pressed="false">5%</button><button type="button" class="chip" data-v="10" aria-pressed="false">10%</button><button type="button" class="chip" data-v="20" aria-pressed="false">20%</button></div></div><div class="field" data-field="rate"><div class="field-head"><label for="f-rate">Interest rate</label><div class="input"><input id="f-rate" name="rate" type="number" step="any" inputmode="decimal" value="6.5"><span class="suf">%</span></div></div><input class="slider" type="range" min="2" max="12" step="0.125" value="6.5" aria-label="Interest rate slider"></div><div class="field"><div class="field-head"><span class="lbl">Loan term</span></div><div class="seg" data-field="years" role="group" aria-label="Loan term"><button type="button" data-v="30" aria-pressed="true">30 years</button><button type="button" data-v="20" aria-pressed="false">20 years</button><button type="button" data-v="15" aria-pressed="false">15 years</button><button type="button" data-v="10" aria-pressed="false">10 years</button></div></div><div class="field" data-field="tax"><div class="field-head"><label for="f-tax">Property tax (per year)</label><div class="input"><input id="f-tax" name="tax" type="number" step="any" inputmode="decimal" value="1"><span class="suf">%</span></div></div></div><div class="field" data-field="ins"><div class="field-head"><label for="f-ins">Home insurance (per year)</label><div class="input"><span class="pre">$</span><input id="f-ins" name="ins" type="number" step="any" inputmode="decimal" value="1800"></div></div></div><div class="field" data-field="hoa"><div class="field-head"><label for="f-hoa">HOA dues (per month)</label><div class="input"><span class="pre">$</span><input id="f-hoa" name="hoa" type="number" step="any" inputmode="decimal" value="0"></div></div></div><div class="field" data-field="pmi"><div class="field-head"><label for="f-pmi">PMI rate (if under 20% down)</label><div class="input"><input id="f-pmi" name="pmi" type="number" step="any" inputmode="decimal" value="0.5"><span class="suf">%</span></div></div></div><div class="field" data-field="extra"><div class="field-head"><label for="f-extra">Extra payment (per month)</label><div class="input"><span class="pre">$</span><input id="f-extra" name="extra" type="number" step="any" inputmode="decimal" value="0"></div></div></div></div><div class="out" aria-live="polite"></div></div></form>
+<div class="ad ad-mid" aria-label="Advertisement"><!-- ad unit: mid --></div>
+<section class="prose">
+
+<h2>How the mortgage calculator works</h2>
+<p>Your monthly mortgage payment has two parts. The first is principal and interest, which pays down the loan. The second is the cost of owning the home that most lenders collect with each payment: property tax, homeowners insurance and, when your down payment is small, mortgage insurance. Lenders call the total PITI, short for principal, interest, taxes and insurance.</p>
+<p>Principal and interest use the standard loan formula:</p>
+<p class="formula-box">Payment = L × r × (1 + r)ⁿ ÷ [(1 + r)ⁿ − 1]</p>
+<ul>
+<li><strong>L</strong> is the loan amount: the home price minus your down payment.</li>
+<li><strong>r</strong> is the monthly interest rate, which is the yearly rate divided by 12.</li>
+<li><strong>n</strong> is the number of monthly payments, such as 360 for a 30-year loan.</li>
+</ul>
+<h2>Example</h2>
+<p>Take a $400,000 home with 20% down. The loan is $320,000. At 6.5% for 30 years, principal and interest come to $2,022.62 a month. Add property tax at 1% of the home price a year ($333.33 a month) and $1,800 a year of insurance ($150.00 a month), and the total is about <strong>$2,505.95</strong> a month.</p>
+<p>Over the full 30 years you would pay about $408,142 in interest, which is more than the original loan. Interest is front-loaded: in the first years most of each payment goes to interest, and only later does the balance fall quickly.</p>
+<h2>What extra payments do</h2>
+<p>An extra payment goes straight to principal, so you stop paying interest on that part of the balance. Adding $200 a month to the loan above pays it off in 23 years, 5 months instead of 30 years and saves about $105,429 in interest. Enter an amount in the extra payment box to try your own number. Check with your loan servicer that extra money is applied to principal and that your loan has no prepayment penalty.</p>
+<h2>Down payment and PMI</h2>
+<p>If you put down less than 20% on a conventional loan, lenders usually charge private mortgage insurance (PMI). It often costs roughly 0.3% to 1.5% of the loan a year, depending on your credit score and down payment. On most conventional loans PMI can be removed once you reach 20% equity, and it ends automatically at 22% equity if you are current on payments. FHA loans use a different type of mortgage insurance with its own rules, so treat the PMI line as a rough guide for those.</p>
+<h2>Property tax and insurance vary by location</h2>
+<p>Property tax rates differ a lot between states and even between neighboring counties, and insurance costs depend on the home, its location and your coverage. Use the figures from the listing, your county assessor or an insurance quote for the most accurate result.</p>
+<p class="notice">This is an estimate. Your lender's loan estimate will show your exact rate, fees and closing costs. Closing costs, changes in tax or insurance over time and adjustable rates are not included.</p>
+
+</section>
+<section class="prose faq" style="margin-top:20px" aria-labelledby="faq-h">
+<h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What is included in a monthly mortgage payment?</summary><p>Principal and interest on the loan, plus property tax and homeowners insurance. Mortgage insurance (PMI) and HOA dues are added when they apply. This calculator shows each part separately.</p></details><details><summary>How much should I put down on a house?</summary><p>Putting down 20% avoids PMI on most conventional loans, but many buyers put down less. A smaller down payment means a larger loan and a higher monthly cost, so weigh it against keeping cash for repairs and emergencies.</p></details><details><summary>Is a 15-year or a 30-year mortgage better?</summary><p>A 15-year loan has a higher monthly payment but usually a lower rate and far less total interest. A 30-year loan has a lower payment and more flexibility. Choose the shortest term whose payment you can pay comfortably.</p></details><details><summary>Do extra mortgage payments really save money?</summary><p>Yes. Extra money reduces the balance that interest is charged on, which shortens the loan and cuts total interest. The earlier in the loan you make extra payments, the more they save.</p></details>
+</section>
+</article>
+<aside class="side">
+<div class="side-box"><h2>More tools</h2><ul><li><a href="/auto-loan-calculator/"><span class="glyph small" aria-hidden="true">auto</span><span>Auto Loan Calculator</span></a></li><li><a href="/take-home-pay-calculator/"><span class="glyph small" aria-hidden="true">net</span><span>Take-Home Pay Calculator</span></a></li><li><a href="/compound-interest-calculator/"><span class="glyph small" aria-hidden="true">1+r</span><span>Compound Interest Calculator</span></a></li></ul></div>
+<div class="ad ad-side" aria-label="Advertisement"><!-- ad unit: side --></div>
+</aside>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-grid">
+<div><h2>MoneyMath</h2><p>Free online calculators and unit converters. Everything runs in your browser, so what you type stays on your device.</p></div>
+<div><h2>US finance</h2><ul><li><a href="/mortgage-calculator/">Mortgage Calculator</a></li><li><a href="/auto-loan-calculator/">Auto Loan Calculator</a></li><li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li><li><a href="/retirement-calculator/">Retirement Calculator</a></li><li><a href="/credit-card-payoff-calculator/">Credit Card Payoff Calculator</a></li><li><a href="/take-home-pay-calculator/">Take-Home Pay Calculator</a></li></ul></div>
+<div><h2>India finance</h2><ul><li><a href="/emi-calculator/">EMI Calculator</a></li><li><a href="/sip-calculator/">SIP Calculator</a></li><li><a href="/gst-calculator/">GST Calculator</a></li></ul></div>
+<div><h2>Everyday tools</h2><ul><li><a href="/percentage-calculator/">Percentage Calculator</a></li><li><a href="/age-calculator/">Age Calculator</a></li><li><a href="/km-to-miles/">Kilometres to Miles</a></li><li><a href="/kg-to-lbs/">Kilograms to Pounds</a></li><li><a href="/cm-to-inches/">Centimetres to Inches</a></li><li><a href="/celsius-to-fahrenheit/">Celsius to Fahrenheit</a></li></ul></div>
+<div><h2>Company</h2><ul>
+<li><a href="/about/">About</a></li>
+<li><a href="/contact/">Contact</a></li>
+<li><a href="/privacy-policy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Use</a></li>
+</ul></div>
+</div>
+<p class="footer-note">© 2026 MoneyMath. Results are estimates for general guidance and are not financial, tax or legal advice.</p>
+</div>
+</footer>
+<script src="/assets/units.js"></script>
+<script src="/assets/app.js" defer></script>
+</body>
+</html>
